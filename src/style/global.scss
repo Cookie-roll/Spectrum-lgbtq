@@ -47,6 +47,8 @@ body {
 	height: 1em;
 	position: relative;
 	top: .2em;
+	margin-left: .2em;
+	margin-right: .2em;
 }
 
 input:not([type='range']) {
@@ -54,26 +56,26 @@ input:not([type='range']) {
 	font-size: 1rem;
 	line-height: 1.5;
 	background-color: #fff;
-	border: 1px solid darken($secondary, 10%);
+	border: 1px solid $primary;
 	border-radius: .25rem;
 }
 
 button, .btn {
-	color: darken($secondary, 20%);
+	color: #fff;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
 	user-select: none;
-	background-color: transparent;
-	border: 1px solid darken($secondary, 10%);
+	background-color: $primary;
+	border: 1px solid darken($primary, 10%);
 	padding: .75rem 1.25rem;
 	font-size: 1rem;
 	line-height: 1.5;
 	border-radius: .25rem;
-	transition: all .15s ease-in-out;
+	transition: all .3s ease-in-out;
 	text-decoration: none;
 	&:hover, &.active {
-		background-color: $secondary;
+		background-color: darken($primary, 10%);
 		color: #fff;
 	}
 	&.btn-block {
