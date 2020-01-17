@@ -4,11 +4,12 @@
 
 	export async function preload({ params, query }) {
 	    try {
-            const p = convertBase(params.params, 62, 10);
+            const p = convertBase(params.code, 62, 10);
             if (!p.match(/^[1-9]{7}$/)) {
                 throw new Error(`invalid value "${p}"`);
             }
             return {
+                code: params.code,
                 values: axes.map(function(axis, i) {
                     return {axis, value: parseInt(p.substr(i, 1))};
                 }),
@@ -26,12 +27,14 @@
     import { emoji, t } from '../helpers';
 
 	export let values;
+	export let code;
 </script>
 
 <style lang="scss">
     @import '../style/theme';
 
     h2 {
+        font-size: 2rem;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 3rem;
@@ -59,7 +62,15 @@
 </style>
 
 <svelte:head>
-	<title>{t('title')} » {t('mine')}</title>
+	<title>{t('mine')}</title>
+    <meta name="description" content={t('share.text')} />
+
+    <meta property="og:title" content={t('mine')} />
+    <meta property="og:description" content={t('share.text')}>
+    <meta property="og:url" content={`${process.env.BASE_URL}/${code}`} />
+
+    <meta name="twitter:title" content={t('mine')} />
+    <meta name="twitter:description" content={t('share.text')} />
 </svelte:head>
 
 <h2>

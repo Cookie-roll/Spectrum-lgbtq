@@ -24,6 +24,7 @@
     @import '../style/theme';
 
     h2 {
+        font-size: 2rem;
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 3rem;
@@ -72,6 +73,13 @@
 
 <svelte:head>
 	<title>{t('title')}</title>
+
+    <meta property="og:title" content={t('title')} />
+    <meta property="og:description" content={t('description')}>
+    <meta property="og:url" content={process.env.BASE_URL} />
+
+    <meta name="twitter:title" content={t('title')} />
+    <meta name="twitter:description" content={t('description')} />
 </svelte:head>
 
 <h2>

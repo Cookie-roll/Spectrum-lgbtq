@@ -25,14 +25,9 @@
     <meta name="author" content="Avris <andrea@avris.it>" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:title" content={t('title')} />
-    <meta property="og:description" content={t('description')}>
-    <meta property="og:url" content={process.env.BASE_URL} />
     <meta property="og:image" content={`${process.env.BASE_URL}/banner.png`} />
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content={t('title')} />
-    <meta name="twitter:description" content={t('description')} />
     <meta name="twitter:image" content={`${process.env.BASE_URL}/banner.png`} />
 </svelte:head>
 
