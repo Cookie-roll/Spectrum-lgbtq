@@ -103,20 +103,47 @@
 
 <nav use:emoji>
 	<ul class="menu-main">
-	    <li><h1>💜 {t('title')}</h1></li>
-	    <li class="title"><button class="menu-trigger big" on:click={() => {menuShown = !menuShown}} class:active={menuShown}>≡</button></li>
+	    <li>
+	        <h1>
+	            <img src="favicon.png" class="emoji" alt="Logo">
+	            {t('title')}
+            </h1>
+        </li>
+	    <li class="title">
+	        <button class="menu-trigger big" on:click={() => {menuShown = !menuShown}} class:active={menuShown}>≡</button>
+	    </li>
     </ul>
 
     <ul class="menu" class:shown={menuShown} on:click={() => {menuShown = false}}>
-		<li><a class:selected='{segment === undefined}' href='.'>💬 {t('generate')}</a></li>
-		<li><a class:selected='{segment === "privacy"}' href='privacy'>🔒 {t('privacy.header')}</a></li>
-	    <li><a href="https://avris.it" target="_blank" rel="noopener">👨🏽‍💻 Made with 💜 by Avris</a></li>
-        <li><a href="https://gitlab.com/Avris/Spectrum" target="_blank" rel="noopener">💻 Source code</a></li>
-        <li><a href="https://paypal.me/AndreAvris" target="_blank" rel="noopener">🍻 Buy me a beer</a></li>
+		<li>
+            <a class:selected='{segment === undefined}' href='.'>
+                💬 {t('generate')}
+            </a>
+		</li>
+		<li>
+            <a class:selected='{segment === "privacy"}' href='privacy'>
+                🔒 {t('privacy.header')}
+            </a>
+		</li>
+	    <li>
+            <a href="https://avris.it" target="_blank" rel="noopener">
+                👨🏽‍💻 {t('author.attribution')}
+            </a>
+	    </li>
+        <li>
+            <a href="https://gitlab.com/Avris/Spectrum" target="_blank" rel="noopener">
+                💻 {t('source')}
+            </a>
+        </li>
+        <li>
+            <a href="https://paypal.me/AndreAvris" target="_blank" rel="noopener">
+                🍻 {t('author.support')}
+            </a>
+        </li>
         <li>
             <a href="https://cake.avris.it" target="_blank" rel="noopener">
                 <img src="https://cake.avris.it/favicon.png" class="emoji" alt="Cake logo">
-                Attraction Layer Cake
+                {t('otherProjects.cake')}
             </a>
         </li>
     </ul>

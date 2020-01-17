@@ -4,6 +4,13 @@ module.exports = {
     keywords: 'gender, identity, expression, sexual, orientation, drive, romantic, desire, relationship, male, nonbinary, female, masculine, feminine, straight, bi, pan, gay, asexual, ace, aromantic, romantic, monogamy, polyamory, vanilla, bdsm',
     generate: 'Share yours',
     mine: 'My Sexuality Spectrum',
+    author: {
+        name: 'Avris',
+        email: 'andrea@avris.it',
+        attribution: 'Made with 💜 by Avris',
+        support: 'Buy me a beer',
+    },
+    source: 'Source code',
     axes: {
         genderIdentity: {
             label: 'Gender identity',
@@ -59,5 +66,8 @@ module.exports = {
         noData: 'All the information about the options you have selected are encoded in the URL and are not stored anywhere.',
         tracking: 'I use Matomo to analyse traffic on the website. All visitor data anonymised.',
         contact: 'If you have any questions or requests regarding your personal data, feel free to contact me at',
+    },
+    otherProjects: {
+        cake: 'Attraction Layer Cake',
     },
 };

@@ -22,13 +22,13 @@
 <svelte:head>
     <meta name="description" content={t('description')} />
     <meta name="keywords" content={t('keywords')} />
-    <meta name="author" content="Avris <andrea@avris.it>" />
+    <meta name="author" content="{`${t('author.name')} <${t('author.email')}>`}" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:image" content={`${process.env.BASE_URL}/banner.png`} />
+    <meta property="og:image" content={`${process.env.BASE_URL}/image.png`} />
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content={`${process.env.BASE_URL}/banner.png`} />
+    <meta name="twitter:image" content={`${process.env.BASE_URL}/image.png`} />
 </svelte:head>
 
 <div>
