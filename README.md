@@ -1,4 +1,4 @@
-# Attraction Layer Cake
+# Sexuality Spectrum
 
  - [Website](https://spectrum.avris.it)
 
