@@ -54,11 +54,18 @@
         display: flex;
         justify-content: space-between;
     }
-    /**
-    .scale span {
-        display: inline-block;
-        width: 10rem;
-    }*/
+    @media(min-width: 600px) {
+        .scale span {
+            display: inline-block;
+            width: 10rem;
+            &:nth-child(2) {
+                text-align: center;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
 </style>
 
 <svelte:head>
