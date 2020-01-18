@@ -77,7 +77,18 @@
             width: 100%;
         }
         li a.selected, li a:hover {
-            background-color:  var(--secondary);
+            position: relative;
+        }
+
+        li a.selected::before, li a:hover::before {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 100%;
+            background-color: var(--primary);
+            display: block;
+            left: 0;
+            top: 0;
         }
 	}
 	@media(min-width: 1264px) {
@@ -92,7 +103,7 @@
         li a.selected::after, li a:hover::after {
             position: absolute;
             content: '';
-            width: calc(100%);
+            width: 100%;
             height: 2px;
             background-color: var(--primary);
             display: block;
