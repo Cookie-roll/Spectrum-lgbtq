@@ -47,7 +47,7 @@
         display: block;
     }
 
-	@media(max-width: 1200px) {
+	@media(max-width: 1263px) {
     	nav {
 	        flex-direction: column;
         }
@@ -79,7 +79,7 @@
             background-color:  var(--secondary);
         }
 	}
-	@media(min-width: 1200px) {
+	@media(min-width: 1264px) {
         button.menu-trigger {
             display: none;
         }
