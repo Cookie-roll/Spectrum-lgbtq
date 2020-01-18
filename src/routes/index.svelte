@@ -29,6 +29,10 @@
         margin-top: 2rem;
         margin-bottom: 3rem;
         font-weight: bold;
+        small {
+            font-size: 1rem;
+            font-weight: normal;
+        }
     }
     h3 {
         font-weight: bold;
@@ -78,6 +82,9 @@
         cursor: pointer;
         border: none;
     }
+    .text-center {
+        text-align: center;
+    }
 </style>
 
 <svelte:head>
@@ -93,6 +100,8 @@
 
 <h2>
     {t('description')}
+    <br/>
+    <small>{t('generateHelper')}</small>
 </h2>
 
 <ul>

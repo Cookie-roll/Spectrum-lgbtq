@@ -3,6 +3,7 @@ module.exports = {
     description: 'Where are you on the Sexuality Spectrum?',
     keywords: 'gender, identity, expression, sexual, orientation, drive, romantic, desire, relationship, male, nonbinary, female, masculine, feminine, straight, bi, pan, gay, asexual, ace, aromantic, romantic, monogamy, polyamory, vanilla, bdsm',
     generate: 'Share yours',
+    generateHelper: '(click on the sliders to select values)',
     mine: 'My Sexuality Spectrum',
     author: {
         name: 'Avris',
