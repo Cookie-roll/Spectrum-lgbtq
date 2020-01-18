@@ -725,6 +725,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@dexlib/svelte-matomo@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@dexlib/svelte-matomo/-/svelte-matomo-0.1.2.tgz#d33c1c5e3fd225c6ad77d14338f0a4186a065484"
+  integrity sha512-R/qvkJ1vji808qqLMYSgl1qLJjC1eMR1OH15FlQFKVo49RI366W9aKgaR7wfnpw5gNuIAedf7E/RB5AKXmZg7g==
+
 "@polka/url@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-0.5.0.tgz#b21510597fd601e5d7c95008b76bf0d254ebfd31"
