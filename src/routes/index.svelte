@@ -8,7 +8,7 @@
     import ClipboardJS from 'clipboard';
 
     const values = axes.map(function(axis, i) {
-         return {axis, value: 0};
+         return {axis, value: 5};
     });
 
     onMount(() => {
