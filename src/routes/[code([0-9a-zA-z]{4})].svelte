@@ -4,8 +4,8 @@
 
 	export async function preload({ params, query }) {
 	    try {
-            const p = convertBase(params.code, 62, 10);
-            if (!p.match(/^[1-9]{7}$/)) {
+            const p = convertBase(params.code, 62, 10).padStart(7, '0');
+            if (!p.match(/^[0-9]{7}$/)) {
                 throw new Error(`invalid value "${p}"`);
             }
             return {

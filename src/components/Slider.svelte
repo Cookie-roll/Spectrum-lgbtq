@@ -3,6 +3,12 @@
 	export let min;
 	export let max;
 	export let disabled = false;
+
+	function mousedown() {
+	    if (value === 0) {
+	        value = 1;
+	    }
+	}
 </script>
 
 <style lang="scss">
@@ -26,8 +32,21 @@
             cursor: ew-resize;
         }
     }
+
+    input[type='range'].empty {
+        opacity: .5;
+        &::-webkit-slider-thumb {
+            opacity: 0 !important;
+        }
+        &::-moz-range-thumb {
+            opacity: 0 !important;
+        }
+        &::-ms-thumb {
+            opacity: 0 !important;
+        }
+    }
 </style>
 
 <div>
-    <input type='range' {min} {max} bind:value={value} {disabled}/>
+    <input type='range' {min} {max} bind:value={value} {disabled} class:empty={value === 0} on:mousedown={mousedown}/>
 </div>

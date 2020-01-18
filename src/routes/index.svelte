@@ -8,7 +8,7 @@
     import ClipboardJS from 'clipboard';
 
     const values = axes.map(function(axis, i) {
-         return {axis, value: 5};
+         return {axis, value: 0};
     });
 
     onMount(() => {
@@ -16,7 +16,7 @@
     });
 
     $: overall = parseInt(values.map(v => v.value).join(''));
-    $: code = convertBase(overall, 10, 62);
+    $: code = convertBase(overall, 10, 62).padStart(4, '0');
     $: url = `${baseUrl}/${code}`;
 </script>
 
@@ -69,6 +69,15 @@
             }
         }
     }
+
+    .btn-clear {
+        background: transparent;
+        padding: 0;
+        float: right;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+    }
 </style>
 
 <svelte:head>
@@ -91,6 +100,9 @@
     <li>
         <h3>
             {t(`axes.${axis}.label`)}
+            {#if value > 0}
+                <button use:emoji class="btn-clear" on:click={_ => values[i].value = 0}>❎</button>
+            {/if}
         </h3>
         <Slider min={1} max={9} bind:value={values[i].value}/>
         <div class="scale">
