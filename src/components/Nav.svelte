@@ -64,6 +64,7 @@
             padding-bottom: .5rem;
             margin-top: .5rem;
             float: right;
+            font-size: 14px;
         }
         .menu {
             display: none;
