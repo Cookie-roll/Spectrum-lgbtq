@@ -22,7 +22,7 @@
 
     @import '../../node_modules/input-range-scss/inputrange';
 
-    input[type='range']:not(disabled) {
+    input[type='range']:not([disabled]) {
         &::-webkit-slider-thumb {
             cursor: ew-resize;
         }
