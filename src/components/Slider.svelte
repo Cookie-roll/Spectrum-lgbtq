@@ -23,12 +23,22 @@
     @import '../../node_modules/input-range-scss/inputrange';
 
     input[type='range']:not(disabled) {
-        &::-webkit-slider-thumb,
-        &::-moz-range-thumb,
-        &::-ms-thumb,
-        &::-webkit-slider-runnable-track,
-        &::-ms-fill-lower,
-        &::-ms-fill-upper {
+        &::-webkit-slider-thumb {
+            cursor: ew-resize;
+        }
+        &::-moz-range-thumb {
+            cursor: ew-resize;
+        }
+        &::-ms-thumb {
+            cursor: ew-resize;
+        }
+        &::-webkit-slider-runnable-track {
+            cursor: ew-resize;
+        }
+        &::-ms-fill-lower {
+            cursor: ew-resize;
+        }
+        &::-ms-fill-upper  {
             cursor: ew-resize;
         }
     }
