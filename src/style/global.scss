@@ -99,3 +99,10 @@ button, .btn {
 .big {
 	font-size: 1.25em;
 }
+
+.alert {
+	border: 1px solid $primary;
+	border-radius: 1rem;
+	padding: 1rem;
+	margin: 2rem 0;
+}

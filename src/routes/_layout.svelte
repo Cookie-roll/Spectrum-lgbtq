@@ -1,5 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+	import Disclaimer from '../components/Disclaimer.svelte';
 
 	import {t} from '../helpers';
 
@@ -46,6 +47,7 @@
 
     <main>
         <slot></slot>
+        <Disclaimer/>
     </main>
 </div>
 

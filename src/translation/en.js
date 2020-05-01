@@ -71,4 +71,17 @@ module.exports = {
     otherProjects: {
         cake: 'Attraction Layer Cake',
     },
+    disclaimer: {
+        header: 'Disclaimer:',
+        author: 'I\'m not the author of the original concept of those axes. ' +
+            'They were circulating online in form of a picture without a watermark ' +
+            '– making it practically impossible to find the author. ' +
+            'I just made an interactive version of it, with a few adjustments.',
+        issues: 'I\'m aware that this representation of gender & sexuality is not perfect – but none is! ' +
+            'Humans are more complex than just a few axes!',
+        examples: 'Yes, us nonbinary folx aren\'t necessarily <em>in between</em> “male” and “female”, ' +
+            'yes, lumping bisexuality and pansexuality together is not ideal, etc. etc. etc. ' +
+            'But it\'s an approximation. ' +
+            'If you come up with a better one, I\'d gladly make an app for it 😉',
+    },
 };
