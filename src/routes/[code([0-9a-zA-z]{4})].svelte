@@ -24,9 +24,10 @@
 <script>
     import Slider from '../components/Slider.svelte';
 
-    import { emoji, t } from '../helpers';
+    import { emoji} from '../helpers';
+    import { t } from '../localisation';
 
-	export let values;
+    export let values;
 	export let code;
 </script>
 

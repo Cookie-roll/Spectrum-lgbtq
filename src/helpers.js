@@ -27,16 +27,14 @@ export const emoji = ($el) => {
     twemoji.parse($el);
 };
 
-import en from './translation/en';
-
-export const t = (key) => {
-    let t = en;
-    for (let k of key.split('.')) {
-        t = t[k];
-        if (t === undefined) {
-            return '';
+export const getQueryVariable = variable => {
+    const query = window.location.search.substring(1);
+    const vars = query.split('&');
+    for (let i = 0; i < vars.length; i++) {
+        const pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) === variable) {
+            return decodeURIComponent(pair[1]);
         }
     }
-
-    return t;
-};
+    return undefined;
+}

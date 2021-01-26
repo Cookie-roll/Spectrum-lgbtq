@@ -1,5 +1,6 @@
 <script>
-	import { t, emoji } from '../helpers';
+    import { emoji } from '../helpers';
+    import { t } from '../localisation';
 </script>
 
 <div class="alert">

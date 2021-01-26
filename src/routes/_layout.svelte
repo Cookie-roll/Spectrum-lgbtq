@@ -2,7 +2,7 @@
 	import Nav from '../components/Nav.svelte';
 	import Disclaimer from '../components/Disclaimer.svelte';
 
-	import {t} from '../helpers';
+	import {t} from '../localisation';
 
 	export let segment;
 
@@ -15,6 +15,13 @@
     $: if ($page) { matomo.trackPageView(); }
 
     onMount(() => matomo.trackPageView());
+</script>
+
+<script context="module">
+    export async function preload({ path, query }) {
+        global.currentLocale = query.l || 'en';
+        return {}
+    }
 </script>
 
 <style lang="scss" global>

@@ -1,9 +1,15 @@
 <script>
-    import { emoji, t } from '../helpers';
+    import { emoji } from '../helpers';
+    import { t, locales, currentLocale } from '../localisation';
 
 	export let segment;
 
 	let menuShown = false;
+	function switchLocale(event) {
+	    window.location.search = '?l=' + event.target.dataset.locale
+        event.preventDefault();
+        event.stopPropagation();
+    }
 </script>
 
 <style>
@@ -91,6 +97,9 @@
             top: 0;
         }
 	}
+    .locale-first {
+        margin-top: 1rem;
+    }
 	@media(min-width: 1264px) {
         button.menu-trigger {
             display: none;
@@ -109,6 +118,10 @@
             display: block;
             bottom: -1px;
             left: 0;
+        }
+        .locale-first {
+            margin-top: 0;
+            margin-left: 1rem;
         }
 	}
 </style>
@@ -158,5 +171,12 @@
                 {t('otherProjects.cake')}
             </a>
         </li>
+        {#each Object.keys(locales) as locale, i}
+            <li class:locale-first={i === 0}>
+                <a href="/?l={locale}" class:selected='{locale === currentLocale()}' on:click={switchLocale} data-locale={locale}>
+                    {locale.toUpperCase()}
+                </a>
+            </li>
+        {/each}
     </ul>
 </nav>

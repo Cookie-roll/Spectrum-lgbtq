@@ -1,5 +1,6 @@
 <script>
-    import { emoji, t } from '../helpers';
+    import { emoji } from '../helpers';
+    import { t } from '../localisation';
 </script>
 
 <svelte:head>

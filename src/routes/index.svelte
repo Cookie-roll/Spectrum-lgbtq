@@ -2,7 +2,8 @@
     import Slider from '../components/Slider.svelte';
 
     import { axes, baseUrl } from '../config';
-    import { convertBase, t } from "../helpers";
+    import { convertBase } from "../helpers";
+    import { t } from '../localisation';
     import { emoji } from '../helpers';
     import { onMount } from 'svelte';
     import ClipboardJS from 'clipboard';
