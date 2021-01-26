@@ -37,6 +37,11 @@
         flex-grow: 1;
     }
 
+    .menu-main a {
+        text-decoration: none;
+        display: block;
+    }
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -55,7 +60,7 @@
         font-weight: bold;
 	}
 
-	li a {
+	.menu li a {
         padding: 1rem 1rem;
         text-decoration: none;
         display: block;
@@ -141,8 +146,10 @@
         <ul class="menu-main">
             <li>
                 <h1>
-                    <img src="favicon.png" class="emoji" alt="Logo">
-                    {t('title')}
+                    <a href='.'>
+                        <img src="favicon.png" class="emoji" alt="Logo">
+                        {t('title')}
+                    </a>
                 </h1>
             </li>
             <li class="title">
