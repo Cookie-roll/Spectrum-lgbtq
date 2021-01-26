@@ -109,11 +109,6 @@
             left: 0;
             top: 0;
         }
-        .locale-first {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #ddd;
-        }
     }
 	@media(min-width: 781px) {
         button.menu-trigger {
