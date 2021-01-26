@@ -1,6 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
-	import Disclaimer from '../components/Disclaimer.svelte';
+	import Footer from '../components/Footer.svelte';
 
 	import {t} from '../localisation';
 
@@ -27,12 +27,19 @@
 <style lang="scss" global>
     @import '../style/global';
 
+    #layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
 	main {
+        flex-grow: 1;
 		position: relative;
 		max-width: 56em;
 		background-color: white;
 		padding: 2em;
-		margin: 0 auto;
+		margin: 5rem auto 0 auto;
 		box-sizing: border-box;
 	}
 </style>
@@ -49,13 +56,14 @@
     <meta name="twitter:image" content={`${process.env.BASE_URL}/image.png`} />
 </svelte:head>
 
-<div>
+<div id="layout">
     <Nav {segment}/>
 
     <main>
         <slot></slot>
-        <Disclaimer/>
     </main>
+
+    <Footer/>
 </div>
 
 <Matomo url="https://matomo.avris.it" siteId={19} />

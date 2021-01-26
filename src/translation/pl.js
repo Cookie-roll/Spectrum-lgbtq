@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Spektrum Seksualności',
-    description: 'Gdzie znajdujesz się na Spektrum Seksualności?',
+    title: 'Spektrum Płci i Seksualności',
+    description: 'Gdzie znajdujesz się na Spektrum Płci i Seksualności?',
     keywords: 'gender, identity, expression, sexual, orientation, drive, romantic, desire, relationship, male, nonbinary, female, masculine, feminine, straight, bi, pan, gay, asexual, ace, aromantic, romantic, monogamy, polyamory, vanilla, bdsm',
     generate: 'Udostępnij',
     generateHelper: '(kliknij na wartości, aby je zaznaczyć.)',
@@ -59,7 +59,7 @@ module.exports = {
     share: {
         facebook: 'Udostępnij na Facebooku',
         twitter: 'Udostępnij na Twitterze',
-        text: 'Oto moje spektrum seksualności. A jakie jest twoje?',
+        text: 'Oto moje Spektrum Płci i Seksualności. A jakie jest twoje?',
         copy: 'Skopiuj do schowka',
     },
     privacy: {

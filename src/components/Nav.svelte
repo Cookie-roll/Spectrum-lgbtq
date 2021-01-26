@@ -17,9 +17,6 @@
 		border-bottom: 1px solid var(--secondary);
 		padding: 0;
 
-		display: flex;
-		justify-content: space-between;
-
 		position: fixed;
 		top: 0;
         width: 100%;
@@ -28,6 +25,17 @@
 
         box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0,0,0,.25);
 	}
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .menu-main {
+        flex-grow: 1;
+    }
 
 	ul {
 		margin: 0;
@@ -53,13 +61,18 @@
         display: block;
     }
 
-	@media(max-width: 1263px) {
-    	nav {
+	@media(max-width: 780px) {
+    	nav .container {
 	        flex-direction: column;
         }
         .menu-main {
             display: flex;
             justify-content: space-between;
+        }
+        .menu-main img {
+            height: 2rem;
+            float: left;
+            margin-right: .5rem;
         }
         .title {
             flex: 1 1 auto;
@@ -68,7 +81,7 @@
         button.menu-trigger {
             padding-top: .5rem;
             padding-bottom: .5rem;
-            margin-top: .5rem;
+            margin-top: 1rem;
             float: right;
             font-size: 14px;
         }
@@ -96,11 +109,13 @@
             left: 0;
             top: 0;
         }
-	}
-    .locale-first {
-        margin-top: 1rem;
+        .locale-first {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+        }
     }
-	@media(min-width: 1264px) {
+	@media(min-width: 781px) {
         button.menu-trigger {
             display: none;
         }
@@ -119,64 +134,47 @@
             bottom: -1px;
             left: 0;
         }
-        .locale-first {
-            margin-top: 0;
+        .locale-links {
             margin-left: 1rem;
+            margin-right: 1rem;
         }
 	}
 </style>
 
 <nav use:emoji>
-	<ul class="menu-main">
-	    <li>
-	        <h1>
-	            <img src="favicon.png" class="emoji" alt="Logo">
-	            {t('title')}
-            </h1>
-        </li>
-	    <li class="title">
-	        <button class="menu-trigger big" on:click={() => {menuShown = !menuShown}} class:active={menuShown}>≡</button>
-	    </li>
-    </ul>
+    <div class="container">
+        <ul class="menu-main">
+            <li>
+                <h1>
+                    <img src="favicon.png" class="emoji" alt="Logo">
+                    {t('title')}
+                </h1>
+            </li>
+            <li class="title">
+                <button class="menu-trigger big" on:click={() => {menuShown = !menuShown}} class:active={menuShown}>≡</button>
+            </li>
+        </ul>
 
-    <ul class="menu" class:shown={menuShown} on:click={() => {menuShown = false}}>
-		<li>
-            <a class:selected='{segment === undefined}' href='.'>
-                💬 {t('generate')}
-            </a>
-		</li>
-		<li>
-            <a class:selected='{segment === "privacy"}' href='privacy'>
-                🔒 {t('privacy.header')}
-            </a>
-		</li>
-	    <li>
-            <a href="https://avris.it" target="_blank" rel="noopener">
-                👨🏽‍💻 {t('author.attribution')}
-            </a>
-	    </li>
-        <li>
-            <a href="https://gitlab.com/Avris/Spectrum" target="_blank" rel="noopener">
-                💻 {t('source')}
-            </a>
-        </li>
-        <li>
-            <a href="https://paypal.me/AndreAvris" target="_blank" rel="noopener">
-                🍻 {t('author.support')}
-            </a>
-        </li>
-        <li>
-            <a href="https://cake.avris.it" target="_blank" rel="noopener">
-                <img src="https://cake.avris.it/favicon.png" class="emoji" alt="Cake logo">
-                {t('otherProjects.cake')}
-            </a>
-        </li>
-        {#each Object.keys(locales) as locale, i}
-            <li class:locale-first={i === 0}>
-                <a href="/?l={locale}" class:selected='{locale === currentLocale()}' on:click={switchLocale} data-locale={locale}>
-                    {locale.toUpperCase()}
+        <ul class="menu" class:shown={menuShown} on:click={() => {menuShown = false}}>
+            <li>
+                <a class:selected='{segment === undefined}' href='.'>
+                    💬 {t('generate')}
                 </a>
             </li>
-        {/each}
-    </ul>
+            <li>
+                <a class:selected='{segment === "privacy"}' href='privacy'>
+                    🔒 {t('privacy.header')}
+                </a>
+            </li>
+        </ul>
+        <ul class="menu locale-links" class:shown={menuShown} on:click={() => {menuShown = false}}>
+            {#each Object.keys(locales) as locale, i}
+                <li>
+                    <a href="/?l={locale}" class:selected='{locale === currentLocale()}' on:click={switchLocale} data-locale={locale}>
+                        {locale.toUpperCase()}
+                    </a>
+                </li>
+            {/each}
+        </ul>
+    </div>
 </nav>

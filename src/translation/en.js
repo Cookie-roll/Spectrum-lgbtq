@@ -1,10 +1,10 @@
 module.exports = {
-    title: 'Sexuality Spectrum',
-    description: 'Where are you on the Sexuality Spectrum?',
+    title: 'Gender & Sexuality Spectrum',
+    description: 'Where are you on the Gender & Sexuality Spectrum?',
     keywords: 'gender, identity, expression, sexual, orientation, drive, romantic, desire, relationship, male, nonbinary, female, masculine, feminine, straight, bi, pan, gay, asexual, ace, aromantic, romantic, monogamy, polyamory, vanilla, bdsm',
     generate: 'Share yours',
     generateHelper: '(click on the sliders to select values)',
-    mine: 'My Sexuality Spectrum',
+    mine: 'My Gender & Sexuality Spectrum',
     author: {
         name: 'Andrea',
         email: 'andrea@avris.it',
@@ -59,7 +59,7 @@ module.exports = {
     share: {
         facebook: 'Share on Facebook',
         twitter: 'Share on Twitter',
-        text: 'Here\'s my Sexuality Spectrum. What\'s yours?',
+        text: 'Here\'s my Gender &  Spectrum. What\'s yours?',
         copy: 'Copy to clipboard',
     },
     privacy: {
@@ -79,7 +79,7 @@ module.exports = {
             'I just made an interactive version of it, with a few adjustments.',
         issues: 'I\'m aware that this representation of gender & sexuality is not perfect – but none is! ' +
             'Humans are more complex than just a few axes!',
-        examples: 'Yes, us nonbinary folx aren\'t necessarily <em>in between</em> “male” and “female”, ' +
+        examples: 'Yes, us nonbinary folks aren\'t necessarily <em>in between</em> “male” and “female”, ' +
             'yes, lumping bisexuality and pansexuality together is not ideal, etc. etc. etc. ' +
             'But it\'s an approximation. ' +
             'If you come up with a better one, I\'d gladly make an app for it 😉',
