@@ -6,9 +6,9 @@ module.exports = {
     generateHelper: '(kliknij na wartości, aby je zaznaczyć.)',
     mine: 'My Sexuality Spectrum',
     author: {
-        name: 'Avris',
+        name: 'Andrea',
         email: 'andrea@avris.it',
-        attribution: 'Stworzone z 💜 przez Avris',
+        attribution: 'Stworzone z 💜 przez Andreę',
         support: 'Kup mi piwo',
     },
     source: 'Kod źródłowy',
@@ -21,9 +21,9 @@ module.exports = {
         },
         genderExpression: {
             label: 'Wyrażenie płci',
-            left: 'Bardziej Męsk_',
-            middle: 'Androgyniczn_',
-            right: 'Bardziej Kobiec_',
+            left: 'Bardziej męskie',
+            middle: 'Androgyniczne',
+            right: 'Bardziej kobiece',
         },
         sexualOrientation: {
             label: 'Orientacja seksualna',
@@ -39,7 +39,7 @@ module.exports = {
         },
         romanticDesire: {
             label: 'Pociąg romantyczny',
-            left: 'Aromantyzm',
+            left: 'Aromantyczność',
             middle: 'Zaintetesowany',
             right: 'Niepoprawny Romantyzm',
         },
@@ -50,8 +50,8 @@ module.exports = {
             right: 'Poliamoria',
         },
         sexualExploration: {
-            label: 'Postawa seksualna',
-            left: 'Delikatny Seks',
+            label: 'Preferencje seksualne',
+            left: 'Delikatny seks',
             middle: 'Lekkie BDSM',
             right: 'Silne BDSM',
         },
@@ -59,7 +59,7 @@ module.exports = {
     share: {
         facebook: 'Udostępnij na Facebooku',
         twitter: 'Udostępnij na Twitterze',
-        text: 'Oto Moje spektrum seksualności. A jakie jest twoje?',
+        text: 'Oto moje spektrum seksualności. A jakie jest twoje?',
         copy: 'Skopiuj do schowka',
     },
     privacy: {
@@ -72,16 +72,16 @@ module.exports = {
         cake: 'Przekładaniec pociągu',
     },
     disclaimer: {
-        header: 'Klauzula:',
-        author: 'Nie jestem autorem pomysłu tych osi.' +
-            'Krążyły w sieci w postaci obrazu bez znaku wodnego ' +
+        header: 'Zastrzeżenie:',
+        author: 'Nie jestem autorum pomysłu tych osi. ' +
+            'Krążyły w sieci w postaci obrazu bez znaku wodnego, ' +
             'przez co niemożliwym było znalezienie autora. ' +
             'Stworzyłum interaktywną wersję, z kilkoma poprawkami...',
         issues: 'Zdaję sobie sprawę, że ta reprezentacja płci i seksualności nie jest idealna - ale żadna nie jest! ' +
             'Ludzie są bardziej złożeni niż parę osi!',
         examples: 'Tak, my, osoby niebinarne, niekoniecznie jesteśmy <em>pomiędzy</em> „mężczyzną” a „kobietą”, ' +
-            'tak, łączenie bi oraz pan nie jest idealne, itd.' +
-            'Ale to tylko przybliżenie ' +
+            'tak, łączenie bi oraz pan nie jest idealne, itd. ' +
+            'Ale to tylko przybliżenie. ' +
             'Jeżeli pokażesz lepszą metodę, z radością zrobię dla niej aplikację 😉',
     },
 };
