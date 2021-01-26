@@ -150,18 +150,6 @@
             </li>
         </ul>
 
-        <ul class="menu" class:shown={menuShown} on:click={() => {menuShown = false}}>
-            <li>
-                <a class:selected='{segment === undefined}' href='.'>
-                    💬 {t('generate')}
-                </a>
-            </li>
-            <li>
-                <a class:selected='{segment === "privacy"}' href='privacy'>
-                    🔒 {t('privacy.header')}
-                </a>
-            </li>
-        </ul>
         <ul class="menu locale-links" class:shown={menuShown} on:click={() => {menuShown = false}}>
             {#each Object.keys(locales) as locale, i}
                 <li>

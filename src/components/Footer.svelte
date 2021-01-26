@@ -31,6 +31,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href='privacy'>
+                        🔒 {t('privacy.header')}
+                    </a>
+                </li>
+                <li>
                     <a href="https://cake.avris.it" target="_blank" rel="noopener">
                         <img src="https://cake.avris.it/favicon.png" class="emoji" alt="Cake logo">
                         {t('otherProjects.cake')}
@@ -80,7 +85,7 @@
         list-style-type: none;
         padding-left: 0;
         li {
-            padding-bottom: .5rem;
+            padding-bottom: 1rem;
         }
     }
 
