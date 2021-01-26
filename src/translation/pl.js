@@ -14,7 +14,7 @@ module.exports = {
     translation: {
         attribution: 'Polskie tłumaczenie',
         name: 'Avis Drożniak',
-        link: 'https://avis.lhub.pl',
+        link: 'https://zaimki.pl/@drozniak_',
     },
     source: 'Kod źródłowy',
     axes: {
