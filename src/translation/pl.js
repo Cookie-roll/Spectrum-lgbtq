@@ -11,6 +11,11 @@ module.exports = {
         attribution: 'Stworzone z 💜 przez Andreę',
         support: 'Kup mi piwo',
     },
+    translation: {
+        attribution: 'Polskie tłumaczenie',
+        name: 'Avis Drożniak',
+        link: 'https://avis.lhub.pl',
+    },
     source: 'Kod źródłowy',
     axes: {
         genderIdentity: {

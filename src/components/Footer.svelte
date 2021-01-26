@@ -12,6 +12,14 @@
                         👨🏽‍💻 {t('author.attribution')}
                     </a>
                 </li>
+                {#if t('translation.attribution')}
+                    <li>
+                        <a href={t('translation.link')} target="_blank" rel="noopener">
+                            ✍️ {t('translation.attribution')}:
+                            {t('translation.name')}
+                        </a>
+                    </li>
+                {/if}
                 <li>
                     <a href="https://gitlab.com/Avris/Spectrum" target="_blank" rel="noopener">
                         💻 {t('source')}
