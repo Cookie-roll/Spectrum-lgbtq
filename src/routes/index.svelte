@@ -135,13 +135,13 @@
     </div>
 
     <div class="input-group my">
-        <a href={`http://www.facebook.com/sharer.php?t=${encodeURIComponent(t('share.text'))}&amp;u=${encodeURIComponent(url)}`}
+        <a href={`http://www.facebook.com/sharer.php?t=${encodeURIComponent(t('share.text'))}&u=${encodeURIComponent(url)}`}
            target="_blank" rel="noopener"
            class="btn flex-1"
         >
             {t('share.facebook')}
         </a>
-        <a href={`https://twitter.com/share?text=${encodeURIComponent(t('share.text'))}&amp;url=${encodeURIComponent(url)}`}
+        <a href={`https://twitter.com/share?text=${encodeURIComponent(t('share.text'))}&url=${encodeURIComponent(url)}`}
             target="_blank" rel="noopener"
             class="btn flex-1"
         >
