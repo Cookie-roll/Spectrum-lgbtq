@@ -21,7 +21,7 @@ module.exports = {
         genderIdentity: {
             label: 'Identyfikacja płciowa',
             left: 'Mężczyzna',
-            middle: 'Niebinię',
+            middle: 'Niebinie',
             right: 'Kobieta',
         },
         genderExpression: {
