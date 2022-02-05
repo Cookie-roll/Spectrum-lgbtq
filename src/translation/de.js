@@ -73,7 +73,7 @@ module.exports = {
     },
     disclaimer: {
         header: 'Disclaimer:',
-        author: 'Ich bin nicht der Autor des ursprünglichen Konzepts für diese Achsen. ' +
+        author: 'Ich bin nicht de Autore des ursprünglichen Konzepts für diese Achsen. ' +
             'Sie zirkulierten online in Form eines Bildes ohne Wasserzeichen ' +
             ' - was es praktisch unmöglich macht, den Urheber zu finden. ' +
             'Ich habe gerade eine interaktive Version davon erstellt, mit einigen Anpassungen',
