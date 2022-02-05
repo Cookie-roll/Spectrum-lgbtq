@@ -9,7 +9,7 @@ module.exports = {
         name: 'Andrea',
         email: 'andrea@avris.it',
         attribution: 'Stworzone z 💜 przez Andreę',
-        support: 'Kup mi piwo',
+        support: 'Postaw mi piwo',
     },
     translation: {
         attribution: 'Polskie tłumaczenie',
