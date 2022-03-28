@@ -9,5 +9,5 @@
     
 ## Copyright
  
- * **Author:** Andrea Prusinowski [(Avris.it)](https://avris.it)
- * **Licence:** [MIT](https://mit.avris.it)
+ * **Author:** Andrea Vos [(Avris.it)](https://avris.it)
+ * **Licence:** [OQL](https://oql.avris.it/license?c=Andrea%20Vos%7Chttps://avris.it)
