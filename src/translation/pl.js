@@ -6,9 +6,9 @@ module.exports = {
     generateHelper: '(kliknij na wartości, aby je zaznaczyć.)',
     mine: 'My Sexuality Spectrum',
     author: {
-        name: 'Andrea',
+        name: 'Andrea Vos',
         email: 'andrea@avris.it',
-        attribution: 'Stworzone z 💜 przez Andreę',
+        attribution: 'Stworzone z 💜 przez Andreę Vos',
         support: 'Postaw mi piwo',
     },
     translation: {

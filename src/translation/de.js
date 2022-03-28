@@ -6,9 +6,9 @@ module.exports = {
     generateHelper: '(Klicke auf die Schieberegler, um Werte auszuwählen)',
     mine: 'Mein Geschlechtliches & Sexuelles Spektrum',
     author: {
-        name: 'Andrea',
+        name: 'Andrea Vos',
         email: 'andrea@avris.it',
-        attribution: 'Gemacht mit 💜 von Andrea',
+        attribution: 'Gemacht mit 💜 von Andrea Vos',
         support: 'Spendiere mir ein Bier',
     },
     source: 'Quellcode',
