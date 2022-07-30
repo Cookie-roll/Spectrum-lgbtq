@@ -2,8 +2,6 @@
     import { emoji } from '../helpers';
     import { t, locales, currentLocale } from '../localisation';
 
-	export let segment;
-
 	let menuShown = false;
 	function switchLocale(event) {
 	    window.location.search = '?l=' + event.target.dataset.locale

@@ -7,7 +7,6 @@
 	export let segment;
 
 	import { stores } from '@sapper/app';
-	import { onMount } from 'svelte';
 
     const { page } = stores();
 </script>
