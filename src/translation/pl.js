@@ -70,7 +70,7 @@ module.exports = {
     privacy: {
         header: 'Prywatność',
         noData: 'Wszystkie informacje o wybranych opcjach są zakodowane w adresie URL i nie są nigdzie przechowywane.',
-        tracking: 'Używam Matomo do analizy ruchu na stronie. Wszystkie dane odwiedzających zanonimizowane.',
+        tracking: 'Używam Plausible do analizy ruchu na stronie. Wszystkie dane odwiedzających zanonimizowane.',
         contact: 'Jeśli masz jakiekolwiek pytania lub prośby dotyczące Twoich danych osobowych, skontaktuj się ze mną pod adresem',
     },
     otherProjects: {

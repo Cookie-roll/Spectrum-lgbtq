@@ -8,13 +8,8 @@
 
 	import { stores } from '@sapper/app';
 	import { onMount } from 'svelte';
-    import Matomo, { matomo } from '@dexlib/svelte-matomo/src/index.svelte';
 
     const { page } = stores();
-
-    $: if ($page) { matomo.trackPageView(); }
-
-    onMount(() => matomo.trackPageView());
 </script>
 
 <script context="module">
@@ -67,6 +62,4 @@
 
     <Footer/>
 </div>
-
-<Matomo url="https://matomo.avris.it" siteId={19} />
 
