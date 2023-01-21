@@ -24,7 +24,10 @@ export const convertBase = function (value, fromBase, toBase) {
 import twemoji from 'twemoji';
 
 export const emoji = ($el) => {
-    twemoji.parse($el);
+    twemoji.parse($el, {
+        // default was https://twemoji.maxcdn.com/v/14.0.2/ but it's down
+        base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/',
+    });
 };
 
 export const getQueryVariable = variable => {
