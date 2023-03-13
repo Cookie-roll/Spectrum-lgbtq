@@ -21,15 +21,6 @@ export const convertBase = function (value, fromBase, toBase) {
     return newValue || '0';
 };
 
-import twemoji from 'twemoji';
-
-export const emoji = ($el) => {
-    twemoji.parse($el, {
-        // default was https://twemoji.maxcdn.com/v/14.0.2/ but it's down
-        base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/',
-    });
-};
-
 export const getQueryVariable = variable => {
     const query = window.location.search.substring(1);
     const vars = query.split('&');

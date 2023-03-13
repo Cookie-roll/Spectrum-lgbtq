@@ -1,5 +1,4 @@
 <script>
-    import { emoji } from '../helpers';
     import { t, locales, currentLocale } from '../localisation';
 
 	let menuShown = false;
@@ -139,7 +138,7 @@
 	}
 </style>
 
-<nav use:emoji>
+<nav>
     <div class="container">
         <ul class="menu-main">
             <li>

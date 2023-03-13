@@ -4,7 +4,6 @@
     import { axes, baseUrl } from '../config';
     import { convertBase } from "../helpers";
     import { t } from '../localisation';
-    import { emoji } from '../helpers';
     import { onMount } from 'svelte';
     import ClipboardJS from 'clipboard';
 
@@ -115,7 +114,7 @@
         <h3>
             {t(`axes.${axis}.label`)}
             {#if value > 0}
-                <button use:emoji class="btn-clear" on:click={_ => values[i].value = 0}>❎</button>
+                <button class="btn-clear" on:click={_ => values[i].value = 0}>❎</button>
             {/if}
         </h3>
         <Slider min={1} max={9} bind:value={values[i].value}/>
@@ -131,7 +130,7 @@
 <div class="jumbotron">
     <div class="input-group my">
         <input readonly value={url} class="flex-1" id="url"/>
-        <button use:emoji title={t('share.copy')} data-clipboard-target="#url">📋</button>
+        <button title={t('share.copy')} data-clipboard-target="#url">📋</button>
     </div>
 
     <div class="input-group my">

@@ -49,7 +49,7 @@
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image" content={`${process.env.BASE_URL}/image.png`} />
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Open+Sans&display=swap" rel="stylesheet">
 </svelte:head>
 
 <div id="layout">

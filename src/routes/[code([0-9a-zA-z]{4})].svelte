@@ -24,7 +24,6 @@
 <script>
     import Slider from '../components/Slider.svelte';
 
-    import { emoji} from '../helpers';
     import { t } from '../localisation';
 
     export let values;
@@ -102,7 +101,7 @@
 </ul>
 
 <div class="jumbotron">
-    <a class="btn btn-block big" href='.' use:emoji>
+    <a class="btn btn-block big" href='.'>
         💬 {t('generate')}
     </a>
 </div>

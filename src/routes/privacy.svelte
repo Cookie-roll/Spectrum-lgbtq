@@ -1,5 +1,4 @@
 <script>
-    import { emoji } from '../helpers';
     import { t } from '../localisation';
 </script>
 
@@ -8,7 +7,7 @@
 </svelte:head>
 
 
-<div use:emoji>
+<div>
     <h2>🔒 {t('privacy.header')}</h2>
 
     <p>

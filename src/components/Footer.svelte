@@ -1,12 +1,11 @@
 <script>
-    import { emoji } from '../helpers';
     import { t } from '../localisation';
 </script>
 
 <footer>
     <div class="container">
         <div>
-            <ul use:emoji>
+            <ul>
                 <li>
                     <a href="https://avris.it" target="_blank" rel="noopener">
                         👨🏽‍💻 {t('author.attribution')}
@@ -47,7 +46,7 @@
             <strong class="bigger">{t('disclaimer.header')}</strong>
             <p>{t('disclaimer.author')}</p>
             <p>{t('disclaimer.issues')}</p>
-            <p use:emoji>{@html t('disclaimer.examples')}</p>
+            <p>{@html t('disclaimer.examples')}</p>
         </div>
     </div>
 </footer>
